@@ -1,36 +1,26 @@
-# Introduction
+# 声明
 
-This is a skeleton application using the Hyperf framework. This application is meant to be used as a starting place for those looking to get their feet wet with Hyperf Framework.
+该项目是基于hyperf编写的demo项目，仅供参考
 
-# Requirements
+# 系统要求
 
-Hyperf has some requirements for the system environment, it can only run under Linux and Mac environment, but due to the development of Docker virtualization technology, Docker for Windows can also be used as the running environment under Windows.
+- PHP >= 7.2
+- Swoole PHP 扩展 >= 4.4 并且关闭 `Short Name`
+- OpenSSL PHP 扩展
+- JSON PHP 拓展
+- PDO PHP 拓展
+- Redis PHP 拓展
 
-The various versions of Dockerfile have been prepared for you in the [hyperf\hyperf-docker](https://github.com/hyperf/hyperf-docker) project, or directly based on the already built [hyperf\hyperf](https://hub.docker.com/r/hyperf/hyperf) Image to run.
+# 安装
 
-When you don't want to use Docker as the basis for your running environment, you need to make sure that your operating environment meets the following requirements:  
+获取代码
+`git clone https://github.com/swimtobird/hyperf-demo.git`
 
- - PHP >= 7.2
- - Swoole PHP extension >= 4.4，and Disabled `Short Name`
- - OpenSSL PHP extension
- - JSON PHP extension
- - PDO PHP extension （If you need to use MySQL Client）
- - Redis PHP extension （If you need to use Redis Client）
- - Protobuf PHP extension （If you need to use gRPC Server of Client）
+执行数据库迁移
+`php bin/hyperf.php migrate`
 
-# Installation using Composer
+安装组件
+`composer install -vvv`
 
-The easiest way to create a new Hyperf project is to use Composer. If you don't have it already installed, then please install as per the documentation.
-
-To create your new Hyperf project:
-
-$ composer create-project hyperf/hyperf-skeleton path/to/install
-
-Once installed, you can run the server immediately using the command below.
-
-$ cd path/to/install
-$ php bin/hyperf.php start
-
-This will start the cli-server on port `9501`, and bind it to all network interfaces. You can then visit the site at `http://localhost:9501/`
-
-which will bring up Hyperf default home page.
+启动
+`php bin/hyperf.php server:watch`
