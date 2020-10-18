@@ -52,8 +52,6 @@ class UserToken extends Model
 
         self::insert($data);
 
-//        unset($data['user_id']);
-
         return $data;
     }
 }
