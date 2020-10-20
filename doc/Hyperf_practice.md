@@ -1,4 +1,27 @@
-# Hyperf demo说明
+# Hyperf实践
+
+## 为何是hyperf
+
+> 项目需要做高性能、高灵活性开发，基于此，选型于swoole目前成熟框架。
+>
+> 目前市场上Swoole Framework
+
+- TSF: 腾讯基于协程和Swoole的PHP服务器框架
+- EasySwoole: 企业级服务框架
+- PHP-MSF: Camera360基于Swoole的协程企业级微服务框架
+- ZanPHP: 有赞基于Swoole的PHP框架
+- SwooleDistributed: 基于Swoole的分布式通讯框架
+- Group-Co: PHP异步协程框架
+- Swoft: 基于Swoole协程的框架
+- MixPHP: 基于Swoole的次世代PHP框架
+- FastD: 一个支持Swoole的轻量级Web开发框架
+- QueryPHP: 渐进式PHP常驻框架引擎
+- Hyperf: PHP企业级微服务协程框架
+
+目前star第一的是swoft，考虑到其强注释，比较偏向java,学习成本以及维护所以跳过考虑。
+基于以上，观察到hyperf,而hyperf是swoft开发组的成员发起的框架，也是拥有了swoft优秀的基因基础上，不再强制注释，并且集成大量企业级开发的组件，完善丰富的文档，完善的项目测试用例，框架作者目前更新稳定，开发组还移植了非常多丰富的组件到hyperf中，比如说laravel-orm，可以在hyperf中使用，还有分布式，微服务，大数据，集群部署相关的内容JSON RPC 服务，Elasticsearch，Docker Swarm 集群搭建等等非常多的组件，另外swoole官方大有将hyperf作为官方框架的迹象。
+
+
 
 ## 定义目录结构
 
